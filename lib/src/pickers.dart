@@ -94,6 +94,8 @@ class MonthPickerState extends State<MonthPicker> {
     return GridView.count(
       physics: const NeverScrollableScrollPhysics(),
       padding: const EdgeInsets.all(8.0),
+      mainAxisSpacing: 2,
+      crossAxisSpacing: 2,
       crossAxisCount: 4,
       children: [
         for (var i = 0; i < 12; i++)
@@ -212,6 +214,8 @@ class YearPickerState extends State<YearPicker> {
     return GridView.count(
       physics: const NeverScrollableScrollPhysics(),
       padding: const EdgeInsets.all(8.0),
+      mainAxisSpacing: 2,
+      crossAxisSpacing: 2,
       crossAxisCount: 4,
       children: [
         for (var i = 0; i < 12; i++)
